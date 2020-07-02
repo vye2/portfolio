@@ -1,0 +1,174 @@
+/*import fonts from fonts.css file*/
+@import url(./css/fonts.css);
+/* css variables */
+@import url(./css/partials/_variables.css);
+
+@import url(./css/partials/_global.css);
+
+
+
+
+
+
+
+/* -----------------navigation start--------------- */
+
+.header_area .main-menu .navbar .navbar-brand {
+  padding: 0 2rem 0 5rem;
+}
+
+.header_area .main-menu .navbar {
+  padding: 1rem 20rem;
+}
+
+.header_area .main-menu .nav-item .nav-link {
+  font: normal 500 15px/2px; /* font property*/
+  text-transform: uppercase;
+  padding: 1.7rem;
+  color: black;
+  color: var(--title-color);
+}
+
+/* Home button has gradient color*/
+.header_area .main-menu .navbar-nav .active a {
+  background: var(--gradient-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* When hovering over nav links, show gradient color*/
+.header_area .main-menu .navbar-nav a:hover {
+  background: var(--gradient-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* -----------------navigation end--------------- */
+
+
+/* -----------------banner start--------------- */
+
+.site-main .site-banner {
+  /* CHANGE BACKGROUND LATER */
+  background: url(./img/Portrait.jpg) no-repeat 0% 50%;
+}
+
+.site-main .site-banner .site-title h3 {
+  padding-top: 35%;
+  font-weight: 500;
+}
+
+.site-main .site-banner .site-title h3::after {
+  content: "";
+  height: 2px;
+  width: 18vw;
+  background: black;
+  display: inline-block;
+  margin-left: 5%;
+  transform: translateY(-10px);
+}
+
+.site-main .site-banner .site-title h1 {
+  font-size: 5rem;
+}
+
+.site-main .site-banner .site-title h4 {
+  font-weight: ;
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+
+}
+
+.site-main .site-banner .banner-image > img {
+  padding: 7rem 0;
+  width: 90rem;
+}
+
+/* -----------------banner end--------------- */
+
+
+/* -----------------about start--------------- */
+
+.site-main .about-area {
+  padding: 8rem 5rem;
+}
+
+.site-main .about-area .about-title h2 > span {
+  display: block;
+  font: normal 49px/60px;
+  font-weight: bold;
+  letter-spacing: 21px;
+}
+
+.site-main .about-area .about-title .paragraph > p {
+  padding: .4rem 0;
+}
+
+
+/* -----------------about end--------------- */
+
+
+
+/* -----------------services start--------------- */
+
+.site-main .services-area{
+  padding: 7rem 2rem;
+}
+
+.site-main .services-area .services-title{
+  padding: 0 14rem;
+}
+
+.site-main .services-area .services-title h1{
+  font-size: 35px;
+}
+
+.site-main > .services-area .services{
+  background: rgba(242, 247, 248, 0.973);
+  padding: 2rem 0;
+  width: 16rem;
+  margin: 5rem .5rem;
+  transition: box-shadow .7s ease;
+}
+
+.site-main > .services-area .services:hover{
+  box-shadow: var(--box-shadow);
+}
+
+/* -----------------services end--------------- */
+
+
+
+/* -----------------project start--------------- */
+
+.site-main .project-area{
+  padding: 4rem 0;
+}
+
+.site-main .project-area .button-group button{
+  background: transparent;
+  border: none;
+  font: normal 16px/130px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+
+.site-main .project-area .button-group button + button{
+  padding-left: 3rem;
+  padding-bottom: 2rem;
+}
+
+.site-main .project-area .grid .out-project > .title h4{
+  font: normal 25px/12px;
+  font-weight: 700;
+}
+
+
+
+
+/* -----------------project end--------------- */
+
+
