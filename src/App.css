@@ -22,10 +22,10 @@
 }
 
 .header_area .main-menu .nav-item .nav-link {
-  font: normal 500 15px/2px; /* font property*/
+  font: normal 15px/2px; /* font property*/
+  font-weight: 500;
   text-transform: uppercase;
   padding: 1.7rem;
-  color: black;
   color: var(--title-color);
 }
 
@@ -52,7 +52,7 @@
 
 .site-main .site-banner {
   /* CHANGE BACKGROUND LATER */
-  background: url(./img/Portrait.jpg) no-repeat 0% 50%;
+  background: url(./img/banner.png) no-repeat 0% 50%;
 }
 
 .site-main .site-banner .site-title h3 {
@@ -99,7 +99,7 @@
   display: block;
   font: normal 49px/60px;
   font-weight: bold;
-  letter-spacing: 21px;
+  letter-spacing: 10px;
 }
 
 .site-main .about-area .about-title .paragraph > p {
@@ -161,14 +161,79 @@
   padding-bottom: 2rem;
 }
 
-.site-main .project-area .grid .out-project > .title h4{
+.site-main .project-area .grid .our-project .img{
+  position: relative;
+  height: 287px;
+  width: 315px;
+}
+
+.site-main .project-area .grid .our-project .img .img-description-layer{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(36, 62, 206, 0.6);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  transition: opacity .2s, visibility .2s;
+}
+
+.site-main .project-area .grid .our-project .img .img-description-layer .img-description{
+  transition: .2s;
+  transform: translateY(1em);
+}
+
+.site-main .project-area .grid .our-project > .title h4{
   font: normal 25px/12px;
   font-weight: 700;
+}
+
+/* ...img a:hover img*/
+.site-main .project-area .grid .our-project .img:hover .img-description-layer{
+  /* filter: brightness(1.1) drop-shadow(1px 8px 30px #b1afaf); */
+  
+  box-shadow: 1px 8px 30px #b1afaf;
+  visibility: visible;
+  opacity: 1;
+}
+
+.site-main .project-area .grid .our-project .img:hover .img-description{
+  transform: translateY(0);
 }
 
 
 
 
+
 /* -----------------project end--------------- */
+
+
+/* -----------------footer start--------------- */
+
+.footer-area{
+  padding: 5rem 0;
+}
+
+.footer-area .social h5{
+  font: normal 23px/30px;
+  font-weight: 500;
+}
+
+.footer-area .social a > i{
+  font-size: 22px;
+  padding: 2rem;
+  color: var(--border-color);
+}
+
+
+.footer-area .social a:hover > i{
+  color: var(--primary-color);
+}
+/* -----------------footer end--------------- */
+
 
 
