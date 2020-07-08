@@ -1,20 +1,24 @@
 import React, { Component } from 'react';
 
-import './css/all.min.css';
 import './App.css';
+import './css/all.min.css';
 import './css/responsive.css';
 
 
 import Navbar from './components/Header/Navbar.js';
+import Bar from './components/Skills/Bar.js';
+
 import Portrait from './img/Portrait.png';
 import Project1 from './img/Project1.png';
-import temp1 from './img/temp1.png';
+/*import temp1 from './img/temp1.png';
 import temp2 from './img/temp2.png';
 import temp3 from './img/temp3.png';
-import temp4 from './img/temp4.png';
+import temp4 from './img/temp4.png';*/
 
 class App extends Component {
+  
   render() {
+    
     return (
       <div>
 
@@ -73,9 +77,8 @@ class App extends Component {
                 </div>
                 <div className="col-lg-6 col-md-12 about-title">
                   <h2 className="text-uppercase pt-5">
-                    <span>Let me </span>
-                    <span>introduce </span>
-                    <span>myself</span>
+                    <span>About Me</span>
+  
                   </h2>
 
                   <div className="paragraph py-4 w-75">
@@ -85,8 +88,8 @@ class App extends Component {
                       practical, effortless-to-use software solutions.
                     </p>
                     <p className="para">                  
-                      When I'm not outdoors woodworking or hiking, I'm investigating new ways to improve my design discipline. I want to create impressive and scalable software that
-                      solves real world problems. I'm seeking an entry level position in the software field where I can apply honed knowledge and gain collaborative and industry experience.
+                      When I'm not outdoors woodworking or hiking, I'm investigating new ways to improve my design discipline. I'm seeking an entry level software engineer position 
+                      where I can apply my honed knowledge to create impressive and scalable software that solves real world problems.
                     </p>
                   </div>
 
@@ -111,6 +114,23 @@ class App extends Component {
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
                 </div>
               </div>
+
+              <div className="container skills-list">
+                
+                <Bar name="Python" percent="80%"></Bar>
+                <Bar name="Java" percent="80%"></Bar>
+                <Bar name="Javascript" percent="80%"></Bar>
+                <Bar name="HTML" percent="75%"></Bar>
+                <Bar name="CSS" percent="70%"></Bar>
+                <Bar name="C/C++" percent="70%"></Bar>
+                <Bar name="Swift" percent="70%"></Bar>
+                <Bar name="React" percent="55%"></Bar>
+                
+
+            
+              </div>
+
+            {/*
               <div className="container services-list">
                 <div className="row">
                   <div className="col-lg-3 col-md-6 col-sm-12">
@@ -174,7 +194,9 @@ class App extends Component {
                   </div>
                 </div>
               </div>
+              */}
             </div>
+            
           </section>
 
 

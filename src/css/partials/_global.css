@@ -1,5 +1,7 @@
 /* Global Classes */
 
+
+
 .title-text {
   font: normal 50px/72px;
   font-weight: bold;
@@ -90,13 +92,16 @@ button:hover
   font-weight: bold;
 }
 
+
 .navbar_fixed{
   position: fixed;
-  width: 100%;
   top: -1px;
   left: 0; right: 0;
-  background: #ffffff;
+  max-height: 78px;
+
   box-shadow: var(--box-shadow);
   z-index: 999;
   transition: background 1s ease;
 }
+
+

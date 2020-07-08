@@ -13,12 +13,17 @@
 
 /* -----------------navigation start--------------- */
 
+
 .header_area .main-menu .navbar .navbar-brand {
   padding: 0 2rem 0 5rem;
 }
 
 .header_area .main-menu .navbar {
   padding: 1rem 20rem;
+}
+
+.header_area .main-menu .nav-item{
+  height: 10%;
 }
 
 .header_area .main-menu .nav-item .nav-link {
@@ -75,7 +80,6 @@
 }
 
 .site-main .site-banner .site-title h4 {
-  font-weight: ;
   font-size: 1.5rem;
   padding-bottom: 1rem;
 
@@ -83,7 +87,6 @@
 
 .site-main .site-banner .banner-image > img {
   padding: 7rem 0;
-  width: 90rem;
 }
 
 /* -----------------banner end--------------- */
@@ -116,6 +119,63 @@
 .site-main .services-area{
   padding: 7rem 2rem;
 }
+
+.site-main .services-area .skills-list{
+  padding-top: 8rem;
+  padding-bottom: 14rem;
+  width: 80%;
+  margin: 0 auto;
+}
+
+
+
+.site-main .services-area .skills-list .bar-layer{
+  padding: 0.5rem;
+}
+
+.site-main .services-area .skills-list .bar-layer .bar-to-fill{
+  background: whitesmoke;
+  display: block;
+  height: 35px;
+  overflow: hidden;
+}
+
+
+
+.site-main .services-area .skills-list .bar-layer .bar-filled{
+  height: 35px;
+  float: left;
+  background: lightskyblue;
+}
+
+.site-main .services-area .skills-list .bar-layer .bar-to-fill .bar-filled .bar-tag{
+  width: 150px;
+  height: 35px;
+  float: left;
+  background: var(--primary-color);
+}
+
+
+.site-main .services-area .skills-list .bar-layer .bar-to-fill .bar-filled .bar-tag > h6{
+  margin: 0 0 0 0;
+  text-align: center;
+  padding-top: 6px;
+  font-weight: 500;
+}
+
+.site-main .services-area .skills-list .bar-layer .bar-to-fill .bar-percent{
+  height: 35px;
+  text-align: center;
+  float: right;
+  padding-right: 8px;
+  padding-top: 4px;
+}
+
+.site-main .services-area .skills-list .bar-layer .bar-to-fill .bar-percent > h5{
+  font-weight: 300;
+}
+
+
 
 .site-main .services-area .services-title{
   padding: 0 14rem;
@@ -234,6 +294,5 @@
   color: var(--primary-color);
 }
 /* -----------------footer end--------------- */
-
 
 
