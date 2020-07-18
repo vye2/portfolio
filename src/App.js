@@ -3,13 +3,19 @@ import React, { Component } from 'react';
 import './App.css';
 import './css/all.min.css';
 import './css/responsive.css';
+// import ScrollAnimation from 'react-animate-on-scroll';
+import "animate.css/animate.min.css";
 
 
 import Navbar from './components/Header/Navbar.js';
 import Bar from './components/Skills/Bar.js';
 
 import Portrait from './img/Portrait.png';
-import Project1 from './img/Project1.png';
+import Project1 from './img/project1.jpg';
+import Project2 from './img/project2.jpg';
+import Project3 from './img/project3.jpg';
+import Project4 from './img/project4.jpg';
+import UpdatedPortrait from './img/newportrait.JPG'
 /*import temp1 from './img/temp1.png';
 import temp2 from './img/temp2.png';
 import temp3 from './img/temp3.png';
@@ -46,14 +52,14 @@ class App extends Component {
                   <div className="site-buttons">
                     <div className="d-flex flex-row flex-wrap">
                       <button type="button" className="btn button primary-button mr-4 text-uppercase">Hire Me</button>
-                      <button type="button" className="btn button secondary-button text-uppercase">Get CV</button>
+                      {/*<button type="button" className="btn button secondary-button text-uppercase">Get CV</button>*/}
                     </div>
                   </div>
                 </div>
 
                 <div className="col-lg-6 col-md-12 banner-image">
                   <img
-                    src={Portrait}
+                    src={UpdatedPortrait}
                     alt="banner-img"
                     className="img-fluid"
                     />
@@ -66,9 +72,9 @@ class App extends Component {
 
           {/* ============================= About Start ============================*/}
           <section className="about-area">
-            <div className="container-fluid">
+            <div className="container">
               <div className="row">
-                <div className="col-lg-6 col-md-12">
+                <div className="col-lg-6 col-md-12 about-image">
                   <img
                     src={Portrait}
                     alt="About"
@@ -106,29 +112,29 @@ class App extends Component {
           {/* ============================= Services Start ============================*/}
 
           <section className="services-area">
-            <div className="container-fluid">
+            <div className="container">
               <div className="row">
                 <div className="col-lg-12 text-center services-title">
                   <h1 className="text-uppercase title-text">Skills</h1>
-                  <p className="para">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
                 </div>
               </div>
+              {/* <ScrollAnimation animateIn="fadeIn"> */}
 
               <div className="container skills-list">
                 
                 <Bar name="Python" percent="80%"></Bar>
                 <Bar name="Java" percent="80%"></Bar>
                 <Bar name="Javascript" percent="80%"></Bar>
-                <Bar name="HTML" percent="75%"></Bar>
-                <Bar name="CSS" percent="70%"></Bar>
+                <Bar name="HTML" percent="70%"></Bar>
                 <Bar name="C/C++" percent="70%"></Bar>
                 <Bar name="Swift" percent="70%"></Bar>
+                <Bar name="CSS" percent="65%"></Bar>
                 <Bar name="React" percent="55%"></Bar>
                 
 
             
               </div>
+              {/* </ScrollAnimation> */}
 
             {/*
               <div className="container services-list">
@@ -211,25 +217,30 @@ class App extends Component {
               <h1 className="text-uppercase title-h1">Recently Done Projects</h1>
             </div>
 
-            <div className="button-group">
+  {/*
+              <div className="button-group">
               <button type="button" className="active">All</button>
               <button type="button">Popular</button>
               <button type="button">Latest</button>
             </div>
+  */}
 
             <div className="row grid">
 
               <div className="col-lg-4 col-md-6 col-sm-12 element-item latest">
                 <div className="our-project">
                   <div className="img">
-                    <img className="img-img" src={Project1} alt="project1"/>
-                    <div className="img-description-layer text-center">
+                    <img className="img-img img-fluid" src={Project1} alt="project1"/>
+                    <div className="img-description-layer">
                       <p className="img-description">Consumer Health Portal is a web app that tackles the problem of healthtech clutter by collating a user's authenticated health care data into one place.</p>
+                      <div className="img-button">          
+                        <button type="button" className="btn button project-button text-uppercase">Github</button>         
+                      </div>
                     </div>
                   </div>
                   <div className="title py-4">
                     <h4 className="text-uppercase">Consumer Health App</h4>
-                    <span className="text-secondary">React, Node.js, DynamoDB</span>
+                    <span>React, Node.js, DynamoDB</span>
                   </div>
                 </div>
               </div>
@@ -238,14 +249,14 @@ class App extends Component {
               <div className="col-lg-4 col-md-6 col-sm-12 element-item latest">
                 <div className="our-project">
                   <div className="img">
-                    <img className="img-img" src={Project1} alt="project1"/>
-                    <div className="img-description-layer text-center">
+                    <img className="img-img" src={Project2} alt="project1"/>
+                    <div className="img-description-layer">
                       <p className="img-description">FridgeBuddy is a mobile app that helps users manage their food inventory and generates recipes based on their currently stored items.</p>
                     </div>
                   </div>
                   <div className="title py-4">
                     <h4 className="text-uppercase">Fridge Buddy</h4>
-                    <span className="text-secondary">Android, Java</span>
+                    <span>Android, Java</span>
                   </div>
                 </div>
               </div>
@@ -254,14 +265,14 @@ class App extends Component {
               <div className="col-lg-4 col-md-6 col-sm-12 element-item latest">
                 <div className="our-project">
                   <div className="img">
-                    <img className="img-img" src={Project1} alt="project1"/>
-                    <div className="img-description-layer text-center">
+                    <img className="img-img" src={Project3} alt="project1"/>
+                    <div className="img-description-layer">
                       <p className="img-description">NutrientPlus is a nutrition tracker app that recommends users optimal food choices to reach daily nutrient goals.</p>
                     </div>
                   </div>
                   <div className="title py-4">
                     <h4 className="text-uppercase">Nutrient Plus</h4>
-                    <span className="text-secondary">iOS, Swift</span>
+                    <span>iOS, Swift</span>
                   </div>
                 </div>
               </div>
@@ -269,14 +280,14 @@ class App extends Component {
               <div className="col-lg-4 col-md-6 col-sm-12 element-item latest">
                 <div className="our-project">
                   <div className="img">
-                    <img className="img-img" src={Project1} alt="project1"/>
-                    <div className="img-description-layer text-center">
+                    <img className="img-img" src={Project4} alt="project1"/>
+                    <div className="img-description-layer">
                       <p className="img-description">A neural network trained on EEG data gathered from 5 categories of visual stimuli (abstract, waterfalls, faces, Rube Goldberg mechanisms, and speed)</p>
                     </div>
                   </div>
                   <div className="title py-4">
                     <h4 className="text-uppercase">Visual Stimuli Classification</h4>
-                    <span className="text-secondary">Python, Tensorflow</span>
+                    <span>Python, Tensorflow</span>
                   </div>
                 </div>
               </div>

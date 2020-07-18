@@ -9,11 +9,13 @@ html, body {
 /* css variables */
 
 :root {
-  --primary-color: #4458dc;
-  --primary-color2: #854fee;
-  --gradient-color:linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+  /*--primary-color: #4458dc;*/
+  --primary-color: #3356b2;
+  /*--primary-color2: #854fee;*/
+  --primary-color2: #eec64c;
+  --gradient-color:linear-gradient(90deg, #4458dc 0%, #eec64c 100%);
   --title-color: #141313;
-  --text-color: #777777;
+  --text-color: #555555;
   --border-color:#201f1f17;
   --shadow-color: 0px 10px 30px rgba(118, 85, 225, 0.3);
   --box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
