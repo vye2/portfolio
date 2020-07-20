@@ -303,7 +303,7 @@
 }
 
 .site-main .project-area .grid .our-project .img:hover .img-description{
-  /* transform: translateY(0); */
+  transform: translateY(0);
 }
 
 .site-main .project-area .grid .our-project > .title span{

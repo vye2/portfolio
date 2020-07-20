@@ -1,5 +1,4 @@
 import React from 'react';
-import '../../App.css';
 import { Component } from 'react';
 import Project1 from '../../img/project1.jpg';
 import Project2 from '../../img/project2.jpg';
@@ -27,9 +26,9 @@ export default class Projects extends Component {
         id: 2,
         image: Project2,
         alt: "Project2",
-        description: "FridgeBuddy is a mobile app that helps users manage their food inventory and generates recipes based on their currently stored items.",
+        description: "FridgeBuddy is a mobile application that helps the user manage their refrigerator and pantry inventory. Users are able to quickly scan the barcodes of their groceries into the app and keep track of what food items are stored in their refrigerator for later use. Users are also able to generate recipes based on their currently stored food items, and prevent food waste by displaying what food items are near expiration.",
         buttonText: "Github",
-        buttonRef: "",
+        buttonRef: "https://github.com/vye2/FridgeBuddy",
         title: "Fridge Buddy",
         languages: "Android, Java"
       },
@@ -39,7 +38,7 @@ export default class Projects extends Component {
         alt: "Project3",
         description: "NutrientPlus is a nutrition tracker app that recommends users optimal food choices to reach daily nutrient goals.",
         buttonText: "Github",
-        buttonRef: "",
+        buttonRef: "https://github.com/vye2/nutrientplus",
         title: "Nutrient Plus",
         languages: "iOS, Swift"
         
@@ -50,7 +49,7 @@ export default class Projects extends Component {
         alt: "Project4",
         description: "A neural network trained on EEG data gathered from 5 categories of visual stimuli (abstract, waterfalls, faces, Rube Goldberg mechanisms, and speed).",
         buttonText: "Github",
-        buttonRef: "",
+        buttonRef: "https://github.com/vye2/VideoStimuliClassification",
         title: "Visual Stimuli Classification",
         languages: "Python, Tensorflow"
       }
@@ -71,7 +70,8 @@ export default class Projects extends Component {
                     <div className="img-description-layer">
                       <p className="img-description">{project.description}</p>
                       <div className="img-button">          
-                        <button type="button" className="btn button project-button text-uppercase">{project.buttonText}</button>         
+                        {/* <button type="button" className="btn button project-button text-uppercase">{project.buttonText}</button>          */}
+                        <a href={project.buttonRef} target="_blank" rel="noopener noreferrer" className="btn button project-button text-uppercase">{project.buttonText}</a>
                       </div>
                     </div>
                   </div>

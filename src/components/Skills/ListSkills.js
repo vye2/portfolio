@@ -1,10 +1,9 @@
 import React from "react"
-import '../../App.css';
 import { Component } from 'react';
 import Bar from './Bar.js';
 
 
-export default class ListBar extends Component {
+export default class ListSkills extends Component {
   render () {
 
     const skills = [
