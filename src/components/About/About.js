@@ -1,6 +1,7 @@
 import React, { Component } from "react"
-import circlePortrait from '../../img/circleportrait.png'
+// import circlePortrait from '../../img/circleportrait.png'
 import clipart from '../../img/clipart.png'
+import Resume from '../../pdf/Ye_Victor_Resume.pdf'
 
 export default class About extends Component{
 
@@ -10,7 +11,7 @@ export default class About extends Component{
 
 
     return (
-      <section className="about-area">
+      <section id="about" className="about-area">
         <div className="container">
           <div className="row">
             
@@ -24,7 +25,7 @@ export default class About extends Component{
                 <p className="para">{p2}</p>
               </div>
 
-              <button type="button" className="btn button primary-button text-uppercase">Resume</button>
+              <a href={Resume} target="_blank" rel="noopener noreferrer" className="btn button primary-button text-uppercase">Resume</a>
 
             </div>
 

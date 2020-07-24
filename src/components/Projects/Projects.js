@@ -84,7 +84,7 @@ export default class Projects extends Component {
     ]
 
     return (
-      <section className="project-area">
+      <section id="projects" className="project-area">
         <div className="container">
           <div className="project-title pb-5">
             <h1 className="text-uppercase title-h1">Recent Projects</h1>

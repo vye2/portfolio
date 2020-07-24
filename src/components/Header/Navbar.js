@@ -1,5 +1,6 @@
 import React, { Component } from "react"
-import Portrait from '../../img/circleportrait2.png'
+// import Portrait from '../../img/circleportrait2.png'
+import Resume from '../../pdf/Ye_Victor_Resume.pdf'
 
 export default class Navbar extends Component{
   render() {
@@ -18,16 +19,16 @@ export default class Navbar extends Component{
                 <a className="nav-link" href="/">Home<span className="sr-only">(current)</span></a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/">About</a>
+                <a className="nav-link" href="#about">About</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/">Projects</a>
+                <a className="nav-link" href="#projects">Projects</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/">Resume</a>
+              <a href={Resume} target="_blank" rel="noopener noreferrer" className="nav-link">Resume</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/">Contact</a>
+                <a className="nav-link" href="mailto:getvictorye@gmail.com">Contact</a>
               </li>
             </ul>
           </div>

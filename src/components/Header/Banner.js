@@ -24,7 +24,7 @@ export default class Banner extends Component{
               
               <div className="site-buttons">
                 <div className="d-flex flex-row flex-wrap">
-                  <button type="button" className="btn button primary-button mr-4 text-uppercase">Say Hi</button>
+                  <a href="mailto:getvictorye@gmail.com" className="btn button primary-button mr-4 text-uppercase">Say Hi</a>
                   {/*<button type="button" className="btn button secondary-button text-uppercase">Get CV</button>*/}
                 </div>
               </div>

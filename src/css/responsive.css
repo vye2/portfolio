@@ -130,14 +130,11 @@
   .site-main .project-area .element-item .our-project .img
   /* .site-main .project-area .element-item .our-project .im */
   {
-    
+    max-width: 360px;
     width: 100%;
 
   }
 
-  .bg-nav, .bg-collapse{
-    background-color: skyblue;
-  }
 
 }
 
@@ -156,5 +153,9 @@
   .site-main .services-area .services-title{
   /* .site-main .about-area{ */
     padding: 3% 4%;
+  }
+
+  .bg-nav, .bg-collapse{
+    background-color: #8abadf;
   }
 }

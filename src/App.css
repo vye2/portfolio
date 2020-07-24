@@ -65,7 +65,7 @@
 
 /* When hovering over nav links, show gradient color*/
 .header_area .main-menu .navbar-nav a:hover {
-  background: var(--gradient-color);
+  background: var(--primary-color);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -111,7 +111,7 @@
 }
 
 .site-main .site-banner .banner-image > img {
-  width: 500px;
+  width: 450px;
   padding: 7rem 0;
 }
 
@@ -121,7 +121,7 @@
 /* -----------------about start--------------- */
 
 .site-main .about-area {
-  padding: 8rem 0 5rem;
+  padding: 9rem 0 8rem;
   /* background-color: #d1e3bc; */
 }
 
@@ -150,7 +150,7 @@
 /* -----------------services start--------------- */
 
 .site-main .services-area{
-  padding: 4rem 0 4rem;
+  padding: 9rem 0 8rem;
   /* background-color: #efcfaf; */
 }
 
@@ -238,7 +238,7 @@
 /* -----------------project start--------------- */
 
 .site-main .project-area{
-  padding: 4rem 0;
+  padding: 8rem 0;
   /* background-color: #d797dd; */
 
 }
