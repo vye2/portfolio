@@ -111,7 +111,7 @@
 }
 
 .site-main .site-banner .banner-image > img {
-  width: 400px;
+  width: 500px;
   padding: 7rem 0;
 }
 
@@ -126,6 +126,8 @@
 }
 
 .site-main .about-area .about-image > img {
+  width: 500px;
+
   padding: 3rem 0rem;
 }
 
@@ -317,10 +319,6 @@
   font: normal 20px/30px;
   font-weight: 500;
 }
-
-
-
-
 
 /* -----------------project end--------------- */
 

@@ -7,27 +7,36 @@
     margin: 0%;
   }
 
-  .site-main .about-area {
+  .site-main .about-area,
+  .site-main .site-banner
+   {
     padding-top: 0;
   }
 
-  .site-main .site-banner .banner-image,
-  .site-main .site-banner .banner-image > img,
-  .site-main .about-area .about-image,
-  .site-main .about-area .about-image img ,
-  .site-main .about-area .about-image .img-fluid
-  {
-    padding: 0;
+  .site-main .site-banner .banner-image{
+    padding: 2rem 0 0;
+    width: 90%;
+    height: 90%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  .site-main .site-banner .banner-image .img-fluid
-  {
-    padding: 40% 0 0;
-    margin: 0;
+  .site-main .about-area .about-image{
+    padding: 4rem 0 0;
+    width: 90%;
+    height: 90%;
+    margin-left: auto;
+    margin-right: auto;
   }
+
+
 
   .site-main .site-banner .site-title {
+    padding-top: 25%;
     padding-bottom: 17%;
+  }
+  .site-main .site-banner .site-title h1{
+    font-size: 41px;
   }
 
   .site-main .about-area .about-title {
@@ -35,9 +44,7 @@
   }
 
 
-  .site-main .site-banner .site-title h1{
-    font-size: 41px;
-  }
+ 
 
 
   .site-main .services-area .skills-list{
@@ -80,6 +87,33 @@
 }
 
 @media only screen and (max-width: 792px){
+
+  .img-fluid{
+    padding: 0 !important;
+    margin: 0;
+  }
+
+
+  .site-main .site-banner .site-title h3{
+    padding: 0;
+  }
+
+  .site-main .site-banner .site-title {
+    padding-top: 15%;
+  }
+
+  .site-main .site-banner .banner-image{
+    padding: 3rem 0 1rem;
+    text-align: center;
+  }
+
+  .site-main .about-area .about-image{
+    padding: 4rem 0 0;
+    text-align: center;
+
+  }
+
+  
   .site-main .about-area .about-title h2 > span{
     
     font-size: 31px;
@@ -87,13 +121,18 @@
   }
 
 
-
-  .site-main .project-area .button-group button{
-    font: normal 500 18px/40px;
-  }
-
+  
   .site-main .about-area .about-title p{
     padding: 0%;
+  }
+
+  
+  .site-main .project-area .element-item .our-project .img
+  /* .site-main .project-area .element-item .our-project .im */
+  {
+    
+    width: 100%;
+
   }
 
   .bg-nav, .bg-collapse{

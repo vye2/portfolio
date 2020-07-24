@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 // import Portrait from '../../img/Portrait1.jpg';
-import Portrait from '../../img/circleportrait2.png'
+import Portrait from '../../img/circleportrait.png'
 
 export default class Banner extends Component{
 
@@ -10,6 +10,13 @@ export default class Banner extends Component{
         <div className="container">
           <div className="row">
             {/* col-lg6 for website, md-12 for mobile*/}
+            <div className="col-lg-6 col-md-12 banner-image">
+              <img
+                src={Portrait}
+                alt="banner-img"
+                className="img-fluid"
+                />
+            </div>
             <div className="col-lg-6 col-md-12 site-title">
               <h3 className="title-text">What's Up!</h3>
               <h1 className="title-text text-uppercase">I'm Victor</h1>
@@ -33,13 +40,7 @@ export default class Banner extends Component{
             </div>
             
 
-            <div className="col-lg-6 col-md-12 banner-image">
-              <img
-                src={Portrait}
-                alt="banner-img"
-                className="img-fluid"
-                />
-            </div>
+            
           </div>
         </div>
       </section>

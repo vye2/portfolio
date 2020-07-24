@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 import circlePortrait from '../../img/circleportrait.png'
-
+import clipart from '../../img/clipart.png'
 
 export default class About extends Component{
 
@@ -13,13 +13,7 @@ export default class About extends Component{
       <section className="about-area">
         <div className="container">
           <div className="row">
-            <div className="col-lg-6 col-md-12 about-image">
-              <img
-                src={circlePortrait}
-                alt="About"
-                className="img-fluid"
-                />
-            </div>
+            
             <div className="col-lg-6 col-md-12 about-title">
               <h2 className="text-uppercase pt-5">
                 <span>About Me</span>
@@ -32,6 +26,15 @@ export default class About extends Component{
 
               <button type="button" className="btn button primary-button text-uppercase">Resume</button>
 
+            </div>
+
+
+            <div className="col-lg-6 col-md-12 about-image">
+              <img
+                src={clipart}
+                alt="About"
+                className="img-fluid"
+                />
             </div>
           </div>
         </div>
