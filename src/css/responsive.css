@@ -1,21 +1,81 @@
-/* If the viewport is less than eq 340px */
-@media only screen and (max-width: 340px){
+/* If the viewport is less than eq 440px */
+@media only screen and (max-width: 440px){
   .header_area .main-menu .navbar,
-  .header_area .main-menu .navbar .navbar-brand,
-  .site-main .services-area
+  .header_area .main-menu .navbar .navbar-brand
   {
     padding: 2%;
     margin: 0%;
   }
+
+  .site-main .about-area {
+    padding-top: 0;
+  }
+
+  .site-main .site-banner .banner-image,
+  .site-main .site-banner .banner-image > img,
+  .site-main .about-area .about-image,
+  .site-main .about-area .about-image img ,
+  .site-main .about-area .about-image .img-fluid
+  {
+    padding: 0;
+  }
+
+  .site-main .site-banner .banner-image .img-fluid
+  {
+    padding: 40% 0 0;
+    margin: 0;
+  }
+
+  .site-main .site-banner .site-title {
+    padding-bottom: 17%;
+  }
+
+  .site-main .about-area .about-title {
+    padding-top: 18%;
+  }
+
 
   .site-main .site-banner .site-title h1{
     font-size: 41px;
   }
 
 
-  .site-main > .services-area .services{
-    width: 13rem;
+  .site-main .services-area .skills-list{
+    margin: 0;
+    padding: 0;
+    width: 100%;
   }
+
+  .site-main .services-area .skills-list .bar-layer{
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+
+
+  .site-main .project-area .element-item .our-project .img
+  /* .site-main .project-area .element-item .our-project .im */
+  {
+    
+    width: 100%;
+
+  }
+
+  .site-main .project-area .element-item .our-project .img .img-description-layer{
+    font-size: 12px;
+  }
+
+  .site-main .project-area .element-item .our-project .img .img-description-layer .img-button a{
+    font-size: 14px;
+    width: 40%;
+    padding: 0.5rem 1rem;
+  }
+
+  .footer-area .social a > i{
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
 
 }
 
@@ -36,6 +96,10 @@
     padding: 0%;
   }
 
+  .bg-nav, .bg-collapse{
+    background-color: skyblue;
+  }
+
 }
 
 
@@ -50,8 +114,8 @@
     max-width: 90%;
   }
 
-  .site-main .services-area .services-title,
-  .site-main .about-area{
+  .site-main .services-area .services-title{
+  /* .site-main .about-area{ */
     padding: 3% 4%;
   }
 }

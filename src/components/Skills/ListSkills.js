@@ -57,7 +57,7 @@ export default class ListSkills extends Component {
               <h1 className="text-uppercase title-text">Skills</h1>
             </div>
           </div>
-          <div className="container skills-list">
+          <div className="skills-list">
             {skills.map(skill => (
               <Bar name={skill.name} percent={skill.percent}></Bar>
             ))}

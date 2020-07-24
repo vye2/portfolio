@@ -6,7 +6,9 @@
 @import url(./css/partials/_global.css);
 
 
-
+.site{
+  background: linear-gradient(#89badf, #d797dd, #efcfaf);
+}
 
 .slideLeft {
   transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out;
@@ -40,7 +42,9 @@
   padding: 1rem 20rem;
 }
 
-.header_area .main-menu .nav-item{
+.header_area .main-menu .navbar a > img {
+  padding-top: 1rem;
+  width: 60px;
 }
 
 .header_area .main-menu .nav-item .nav-link {
@@ -75,17 +79,18 @@
 .site-main .site-banner {
   /* CHANGE BACKGROUND LATER */
   /* background: url(./img/banner.png) no-repeat 0% 50%; */
-  padding: 5%;
-  background-color: #89badf;
+  padding: 4rem 0 2rem;
+  /* background-color: #89badf; */
 }
 
 .site-main .site-banner .site-title h3 {
-  padding-top: 35%;
+  padding-top: 30%;
   font-weight: 500;
   margin: 0 auto;
+  
 }
 
-.site-main .site-banner .site-title h3::after {
+/* .site-main .site-banner .site-title h3::after {
   content: "";
   height: 2px;
   width: 18vw;
@@ -93,7 +98,7 @@
   display: inline-block;
   margin-left: 5%;
   transform: translateY(-10px);
-}
+} */
 
 .site-main .site-banner .site-title h1 {
   font-size: 5rem;
@@ -116,12 +121,12 @@
 /* -----------------about start--------------- */
 
 .site-main .about-area {
-  padding: 8rem 5rem;
-  background-color: #d1e3bc;
+  padding: 8rem 0 5rem;
+  /* background-color: #d1e3bc; */
 }
 
 .site-main .about-area .about-image > img {
-  padding: 7rem 0;
+  padding: 3rem 0rem;
 }
 
 .site-main .about-area .about-title h2 > span {
@@ -143,8 +148,8 @@
 /* -----------------services start--------------- */
 
 .site-main .services-area{
-  padding: 7rem 2rem 0 2rem;
-  background-color: #efcfaf;
+  padding: 4rem 0 4rem;
+  /* background-color: #efcfaf; */
 }
 
 .site-main .services-area .skills-list{
@@ -232,7 +237,7 @@
 
 .site-main .project-area{
   padding: 4rem 0;
-  background-color: #d797dd;
+  /* background-color: #d797dd; */
 
 }
 
@@ -273,6 +278,7 @@
   color: #fff;
   visibility: hidden;
   opacity: 0;
+  width: 100%;
   transition: opacity .2s, visibility .2s;
 }
 
@@ -331,8 +337,8 @@
 }
 
 .footer-area .social a > i{
-  font-size: 22px;
-  padding: 2rem;
+  font-size: 30px;
+  padding: 3rem;
   color: var(--border-color);
 }
 

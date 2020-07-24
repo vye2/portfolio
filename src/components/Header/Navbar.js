@@ -1,16 +1,17 @@
 import React, { Component } from "react"
+import Portrait from '../../img/circleportrait2.png'
 
 export default class Navbar extends Component{
   render() {
     return (
       <div className= "main-menu">
-        <nav className="navbar navbar-expand-lg navbar-light bg-light navbar_fixed">
+        <nav className="navbar navbar-expand-lg navbar-light bg-nav navbar_fixed"> {/* bg-light*/}
           <a className="navbar-brand" href="/">{/*<img src={logo} alt="logo"/>*/}VICTOR</a>
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" 
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className="collapse navbar-collapse bg-light" id="navbarNav">
+          <div className="collapse navbar-collapse bg-collapse" id="navbarNav">
             <div className="mr-auto"></div>
             <ul className="navbar-nav">
               <li className="nav-item active">

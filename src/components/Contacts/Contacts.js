@@ -6,9 +6,6 @@ export default class Contacts extends Component{
     return (
       <div className="container">
         <div className="">
-          <div className="site-logo text-center py-4">
-            {/*<a href="/"><img src="" alt="logo"/></a>*/}
-          </div>
           <div className="social text-center">
             <h5 className="text-uppercase">Follow Me At:</h5>
             <a href="https://www.linkedin.com/in/victor-y-b63a40107/"><i className="fab fa-linkedin"></i></a>

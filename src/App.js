@@ -18,7 +18,7 @@ class App extends Component {
   
   render() {
     return (
-      <div>
+      <div className="site">
 
         <header className="header_area">
           <Navbar />

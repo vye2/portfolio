@@ -5,6 +5,10 @@ import Project2 from '../../img/project2.jpg';
 import Project3 from '../../img/project3.jpg';
 import Project4 from '../../img/project4.jpg';
 
+import ConsumerHealth from '../../pdf/ConsumerHealth.pdf';
+import FridgeBuddy from '../../pdf/FridgeBuddy.pdf';
+import VisualStimuli from '../../pdf/VisualStimuli.pdf';
+
 export default class Projects extends Component {
 
   
@@ -17,8 +21,12 @@ export default class Projects extends Component {
         image: Project1,
         alt: "Project1",
         description: "Consumer Health Portal is a web app that tackles the problem of healthtech clutter by collating a user's authenticated health care data into one place.",
-        buttonText: "Read More",
-        buttonRef: "",
+        buttons: [
+          { 
+            text: "See PDF",
+            ref: ConsumerHealth 
+          }
+        ],
         title: "Consumer Health App",
         languages: "React, Node.js, DynamoDB"
       },
@@ -27,8 +35,16 @@ export default class Projects extends Component {
         image: Project2,
         alt: "Project2",
         description: "FridgeBuddy is a mobile application that helps the user manage their refrigerator and pantry inventory. Users are able to quickly scan the barcodes of their groceries into the app and keep track of what food items are stored in their refrigerator for later use. Users are also able to generate recipes based on their currently stored food items, and prevent food waste by displaying what food items are near expiration.",
-        buttonText: "Github",
-        buttonRef: "https://github.com/vye2/FridgeBuddy",
+        buttons: [
+          {
+            text: "Github",
+            ref: "https://github.com/vye2/FridgeBuddy",
+          },
+          { 
+            text: "See PDF",
+            ref: FridgeBuddy
+          }
+        ],
         title: "Fridge Buddy",
         languages: "Android, Java"
       },
@@ -37,8 +53,12 @@ export default class Projects extends Component {
         image: Project3,
         alt: "Project3",
         description: "NutrientPlus is a nutrition tracker app that recommends users optimal food choices to reach daily nutrient goals.",
-        buttonText: "Github",
-        buttonRef: "https://github.com/vye2/nutrientplus",
+        buttons: [
+          {
+            text: "Github",
+            ref: "https://github.com/vye2/nutrientplus",
+          }
+        ],
         title: "Nutrient Plus",
         languages: "iOS, Swift"
         
@@ -48,8 +68,16 @@ export default class Projects extends Component {
         image: Project4,
         alt: "Project4",
         description: "A neural network trained on EEG data gathered from 5 categories of visual stimuli (abstract, waterfalls, faces, Rube Goldberg mechanisms, and speed).",
-        buttonText: "Github",
-        buttonRef: "https://github.com/vye2/VideoStimuliClassification",
+        buttons: [
+          {
+            text: "Github",
+            ref: "https://github.com/vye2/VideoStimuliClassification",
+          },
+          { 
+            text: "See PDF",
+            ref: VisualStimuli
+          }
+        ],
         title: "Visual Stimuli Classification",
         languages: "Python, Tensorflow"
       }
@@ -59,7 +87,7 @@ export default class Projects extends Component {
       <section className="project-area">
         <div className="container">
           <div className="project-title pb-5">
-            <h1 className="text-uppercase title-h1">Recently Done Projects</h1>
+            <h1 className="text-uppercase title-h1">Recent Projects</h1>
           </div>
           <div className="row grid">
             {projects.map(project => (
@@ -70,8 +98,10 @@ export default class Projects extends Component {
                     <div className="img-description-layer">
                       <p className="img-description">{project.description}</p>
                       <div className="img-button">          
-                        {/* <button type="button" className="btn button project-button text-uppercase">{project.buttonText}</button>          */}
-                        <a href={project.buttonRef} target="_blank" rel="noopener noreferrer" className="btn button project-button text-uppercase">{project.buttonText}</a>
+                        {/* <button type="button" className="btn button project-button text-uppercase">{project.text}</button>          */}
+                        {project.buttons.map(button => (
+                          <a style={{margin: "0.5rem"}} href={button.ref} target="_blank" rel="noopener noreferrer" className="btn button project-button text-uppercase">{button.text}</a>
+                        ))}
                       </div>
                     </div>
                   </div>
