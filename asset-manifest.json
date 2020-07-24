@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.505b504a.chunk.css",
+    "main.js": "/portfolio/static/js/main.6d7e2482.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.6d7e2482.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.1434ecb4.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.1434ecb4.js.map",
+    "static/js/2.8488acd1.chunk.js": "/portfolio/static/js/2.8488acd1.chunk.js",
+    "static/js/2.8488acd1.chunk.js.map": "/portfolio/static/js/2.8488acd1.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "precache-manifest.9ce44f9deb1d8c8eb4834b0c2399a5be.js": "/portfolio/precache-manifest.9ce44f9deb1d8c8eb4834b0c2399a5be.js",
+    "service-worker.js": "/portfolio/service-worker.js",
+    "static/css/main.505b504a.chunk.css.map": "/portfolio/static/css/main.505b504a.chunk.css.map",
+    "static/js/2.8488acd1.chunk.js.LICENSE.txt": "/portfolio/static/js/2.8488acd1.chunk.js.LICENSE.txt",
+    "static/media/ConsumerHealth.pdf": "/portfolio/static/media/ConsumerHealth.51016b71.pdf",
+    "static/media/FridgeBuddy.pdf": "/portfolio/static/media/FridgeBuddy.c536087f.pdf",
+    "static/media/VisualStimuli.pdf": "/portfolio/static/media/VisualStimuli.4a874d9f.pdf",
+    "static/media/Ye_Victor_Resume.pdf": "/portfolio/static/media/Ye_Victor_Resume.c8f4e264.pdf",
+    "static/media/circleportrait.png": "/portfolio/static/media/circleportrait.64ef400f.png",
+    "static/media/clipart.png": "/portfolio/static/media/clipart.84a45f3b.png",
+    "static/media/all.min.css": "/portfolio/static/media/fa-solid-900.f3a7d3b5.woff",
+    "static/media/project1.jpg": "/portfolio/static/media/project1.174a89ac.jpg",
+    "static/media/project2.jpg": "/portfolio/static/media/project2.a66f707c.jpg",
+    "static/media/project3.jpg": "/portfolio/static/media/project3.923f05a4.jpg",
+    "static/media/project4.jpg": "/portfolio/static/media/project4.79f5ad3e.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1434ecb4.js",
+    "static/js/2.8488acd1.chunk.js",
+    "static/css/main.505b504a.chunk.css",
+    "static/js/main.6d7e2482.chunk.js"
+  ]
+}
