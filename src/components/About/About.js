@@ -6,8 +6,8 @@ import Resume from '../../pdf/Ye_Victor_Resume.pdf'
 export default class About extends Component{
 
   render(){
-    const p1 = "I am a recent Computer Science graduate from the University of California, Santa Cruz. I enjoy exploring different possibilities and scenarios on how to best design an effective and intuitive user experience. I have experience working in small groups as well as leading projects, and have created and contributed practical, effortless-to-use software solutions."
-    const p2 = "When I'm not outdoors woodworking or hiking, I'm investigating new ways to improve my design discipline. I'm seeking an entry level software engineer position where I can apply my honed knowledge to create impressive and scalable software that solves real world problems."
+    const p1 = "I am a software engineer who recently graduated with a Computer Science degree at UC Santa Cruz. I enjoy designing and building exceptional software, websites, and everything in between. I have experience working in small groups as well as leading projects, and have created and contributed practical, effortless-to-use software."
+    const p2 = "When I'm not coding, you can find me woodworking or hiking California trails. I'm seeking an entry level software engineering position where I can leverage my experiences to build interesting and impactful software."
 
 
     return (
